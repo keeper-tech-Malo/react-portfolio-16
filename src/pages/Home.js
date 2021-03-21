@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Navigation from '../component/Navigation.js';
 import Mycarousal from '../component/Mycarousal'
+import Background from '../component/Background'
 
 
 
@@ -8,8 +9,8 @@ function Home() {
     return (
         <Fragment>
             <Navigation/>
-            <h1 className="text-center">Home</h1>
-            <div className="container">
+            <Background/>
+            <div className="container-fluid">
                 <div className="row">
                 <Mycarousal/>
 

@@ -1,76 +1,174 @@
 import React, { Fragment } from 'react';
-import Navigation from '../component/Navigation.js'
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
-import Profile from '../img/44243149_2139095206100797_2424276564897169408_n.jpg'
+import Navigation from '../component/Navigation'
 
-function About() {
-    return (
-        <Fragment>
-            <Navigation/>
-            <div id="about">
-            <div className="about">
-            <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
-            <Container>
-            <Row className="pt-3 pb-5 align-items-center">
-                <Col xs={12} md={6}>
-                <Row className="justify-content-center mb-2 mr-2 ">
-                    <Image className="profile justify-content-end" alt="profile" src={Profile} thumbnail fluid />
-                </Row>
-                </Col>
-                <Col xs={12} md={6}>
-                <Row className=" align-items-start p-2 my-details rounded">
-                    Salut! je m' <strong>&nbsp;Ndekezi Malo</strong>
-                    <br />apprenti
-                    <br />
-                    In 2019, I successfully completed my Engineering with specialization in 'Electronics and Telecommunication'.
-                    <br />
-                    Working with the clients, my goal is always driven towards providing amazing experience with the best level of quality and service to them.
-                    <br />
-                    Along with that, I also help people as a COACH on their journey of becoming a professional programmer. 
-                    <br />I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
-                    <br /> <br />
-                    <Col className="d-flex justify-content-center flex-wrap">
-                    <div>
-                        <a href="#contact">
-                        <Button className="m-2" variant="outline-primary">
-                            Let's talk
-                        </Button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                        <Button className="m-2" variant="outline-success">
-                            My Resume
-                        </Button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/keeper-tech-Malo" target="_blank" rel="noopener noreferrer">
-                        <Button className="m-2" variant="outline-dark">
-                            GitHub
-                        </Button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/anand-kumar-jha-745798a4/" target="_blank" rel="noopener noreferrer">
-                        <Button className="m-2" variant="outline-info">
-                            LinkedIn
-                        </Button>
-                        </a>
-                    </div>
-                    </Col>
-                </Row>
-                </Col>
-                </Row>
-            </Container>
-            </div>
-        </div>
-        </Fragment>
-    );
+import Profile from '../img/44243149_2139095206100797_2424276564897169408_n.jpg'
+import Background from '../component/Background'
+import layers from "../img/layers.png";
+import cogwheel from "../img/cogwheel.png";
+import pen from "../img/pen.png";
+import browser from "../img/browser.png";
+import PropTypes from "prop-types";
+
+
+export default class About extends React.Component {
+	render() {
+		return (
+            <Fragment>
+                <Navigation/>
+                <Background/>
+                
+			<div
+				id="about-container"
+				className="content-containers container text-center mt-5">
+				<h1 id="about" className={this.props.bounceLeft}>
+					About
+				</h1>
+				<div className="row mt-5">
+					<div
+						className={
+							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
+						}>
+						<img src={layers} alt=""/>
+						<h4>Responsive</h4>
+					</div>
+					<div
+						className={
+							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
+						}>
+						<img src={pen} alt=""/>
+						<h4>Design</h4>
+					</div>
+					<div
+						className={
+							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
+						}>
+						<img src={cogwheel} alt=""/>
+						<h4>Performance</h4>
+					</div>
+					<div
+						className={
+							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
+						}>
+						<img src={browser} alt=""/>
+						<h4>Agile</h4>
+					</div>
+				</div>
+
+				<div className="row" style={{ marginTop: 7 + "rem" }}>
+					<div className="col-12 col-lg-6 hidden">
+						<img
+							className={"img-fluid " + this.props.fadeIn}
+							src={Profile}
+							alt=""
+							style={{
+								borderRadius: 50 + "%",
+								height: 250 + "px",
+								width: 250 + "px"
+							}}
+						/>
+						<p className={"mytext pt-3 " + this.props.fadeIn}>
+							j'adore transforme les idées en realite. je suis passioner de code et de musique!
+						</p>
+					</div>
+					<div
+						className={
+							"col-12 col-sm-12 col-md-12 col-lg-6 " +
+							this.props.tada
+						}>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-80-bar"
+								role="progressbar"
+								style={{ width: 80 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								HTML5
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-80-bar"
+								role="progressbar"
+								style={{ width: 80 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								CSS3
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-90-bar"
+								role="progressbar"
+								style={{ width: 90 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								Javascript
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-60-bar"
+								role="progressbar"
+								style={{ width: 60 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								PHP
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-80-bar"
+								role="progressbar"
+								style={{ width: 80 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								ReactJS
+							</div>
+						</div>
+						
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-60-bar"
+								role="progressbar"
+								style={{ width: 60 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								SASS
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-80-bar"
+								role="progressbar"
+								style={{ width: 80 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								VanillaJS
+							</div>
+						</div>
+						<div className="progress mb-3">
+							<div
+								className="progress-bar fill-60-bar"
+								role="progressbar"
+								style={{ width: 60 + "%" }}
+								aria-valuemin="0"
+								aria-valuemax="100">
+								Logic Pro X
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+                
+            </Fragment>
+		);
+	}
 }
 
-export default About;
+About.propTypes = {
+	bounceLeft: PropTypes.string,
+	fadeInLeft: PropTypes.string,
+	fadeInRight: PropTypes.string,
+	fadeIn: PropTypes.string,
+	tada: PropTypes.string
+};

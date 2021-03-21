@@ -1,5 +1,8 @@
 import React  from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../img/logo-Malo'
+import Navbar from "react-bootstrap/Navbar";
+
 
 
 
@@ -7,7 +10,12 @@ import { NavLink } from 'react-router-dom';
 function Navigation() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark  ">
-            <a className="navbar-brand text-white" href="###">Portofolio</a>
+            <div>
+                <Navbar.Brand href="#home">
+                    <img className="logo" src={Logo} alt="" />
+                </Navbar.Brand>
+            </div>
+            
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
             </button>
@@ -40,6 +48,7 @@ function Navigation() {
             </div>
             </div>
         </nav>
+        
     )
 }
 
