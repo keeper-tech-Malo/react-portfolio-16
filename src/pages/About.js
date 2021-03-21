@@ -20,8 +20,7 @@ export default class About extends React.Component {
 					<div id="stars" />
 					<div id="stars2" />
 					<div id="stars3" />
-            		
-			<div
+				<div
 				id="about-container"
 				className="content-containers container text-center mt-5">
 				<h1 id="about" className={this.props.bounceLeft}  className="text-white">
@@ -145,7 +144,8 @@ export default class About extends React.Component {
 					</div>
 				</div>
 			</div>
-            	</div>
+            </div>
+			
                 
                 
                 

@@ -119,12 +119,10 @@ export default class Projects extends React.Component {
 							<div className="modal-description">
 								<ul>
 									<li>
-										site en ligne E-commerce
-									</li>
-									<li>
-										design avec  HTML5, Sass, Bootstrap,
+										site en ligne E-commerce, design avec  HTML5, Sass, Bootstrap,
 										javascript.
 									</li>
+									
 								</ul>
 							</div>
 							<div className="modal-bottom">
@@ -203,12 +201,10 @@ export default class Projects extends React.Component {
 							<div className="modal-description">
 								<ul>
 									<li>
-										une simple todolist
-									</li>
-									<li>
-										developper avec HTML5, CSS3, Bootstrap
+										une simple todolist, developper avec HTML5, CSS3, Bootstrap
 									    and ReactJS.
 									</li>
+									
 								</ul>
 							</div>
 							<div className="modal-bottom">
