@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import Navigation from '../component/Navigation.js'
+import Social from '../component/Social'
 import PropTypes from "prop-types";
+
 
 
 
@@ -9,6 +11,7 @@ export default class Contact extends React.Component {
 		return (
             <Fragment>
                 <Navigation/>
+                
                 <div id="my-background" className="background">
 					<div id="stars" />
 					<div id="stars2" />
@@ -73,6 +76,7 @@ export default class Contact extends React.Component {
 				</form>
 			</div>
             </div>
+            <Social/>
             </Fragment>
 		);
 	}
