@@ -122,15 +122,15 @@
 }
 
 .text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -30%);
-  -ms-transform: translate(-50%, -30%);
-  transform: translate(-50%, -30%);
-  text-align: center;
+color: black;
+font-size: 20px;
+position: absolute;
+top: 30%;
+left: 50%;
+-webkit-transform: translate(-50%, -30%);
+-ms-transform: translate(-50%, -30%);
+transform: translate(-50%, -30%);
+text-align: center;
 }
 
 .project-button {
@@ -177,7 +177,7 @@
     width: 45%;
     top: 10%;
     left: 50%;
-    height: 85%;
+    height: 90%;
     background-color: #f8f9fa;
     z-index: 101;
     transform: translate(-50%,-10%);

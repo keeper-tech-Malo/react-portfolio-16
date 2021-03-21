@@ -59,7 +59,7 @@ export default class About extends React.Component {
 					</div>
 				</div>
 
-				<div className="row" style={{ marginTop: 7 + "rem" }}>
+				<div className="row " style={{ marginTop: 7 + "rem" }}>
 					<div className="col-12 col-lg-6 hidden">
 						<img
 							className={"img-fluid " + this.props.fadeIn}
@@ -67,11 +67,11 @@ export default class About extends React.Component {
 							alt=""
 							style={{
 								borderRadius: 50 + "%",
-								height: 250 + "px",
+								height: 220 + "px",
 								width: 250 + "px"
 							}}
 						/>
-						<p className={"mytext pt-3 " + this.props.fadeIn} className="text-white text-uppercase">
+						<p className={"mytext pt-3 " + this.props.fadeIn} className="text-white text-uppercase pb-5">
 							J'adore transforme les idées en realite. Je suis passioner de code et de musique!
 						</p>
 					</div>
