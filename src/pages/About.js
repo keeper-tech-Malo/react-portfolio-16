@@ -3,7 +3,7 @@ import Navigation from '../component/Navigation'
 
 
 import Profile from '../img/44243149_2139095206100797_2424276564897169408_n.jpg'
-import Background from '../component/Background'
+
 import layers from "../img/layers.png";
 import cogwheel from "../img/cogwheel.png";
 import pen from "../img/pen.png";
@@ -24,7 +24,7 @@ export default class About extends React.Component {
 			<div
 				id="about-container"
 				className="content-containers container text-center mt-5">
-				<h1 id="about" className={this.props.bounceLeft}  className="text-danger">
+				<h1 id="about" className={this.props.bounceLeft}  className="text-white">
 					About
 				</h1>
 				<div className="row mt-5">
@@ -33,28 +33,28 @@ export default class About extends React.Component {
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
 						<img src={layers} alt=""/>
-						<h4 className="text-danger">Responsive</h4>
+						<h4 className="text-white">Responsive</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
 						<img src={pen} alt=""/>
-						<h4 className="text-danger">Design</h4>
+						<h4 className="text-white">Design</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
 						<img src={cogwheel} alt=""/>
-						<h4 className="text-danger">Performance</h4>
+						<h4 className="text-white">Performance</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
 						<img src={browser} alt=""/>
-						<h4 className="text-danger">Agile</h4>
+						<h4 className="text-white">Agile</h4>
 					</div>
 				</div>
 
@@ -70,7 +70,7 @@ export default class About extends React.Component {
 								width: 250 + "px"
 							}}
 						/>
-						<p className={"mytext pt-3 " + this.props.fadeIn}>
+						<p className={"mytext pt-3 " + this.props.fadeIn} className="text-white text-uppercase">
 							J'adore transforme les idées en realite. Je suis passioner de code et de musique!
 						</p>
 					</div>
