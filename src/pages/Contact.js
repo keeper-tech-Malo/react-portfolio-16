@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
 					<div id="stars3" />
 
 			<div id="my-contact" className="container text-center my-5">
-				<h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
+				<h1 id="contact" className={"mb-3 " + this.props.fadeInLeft} className="text-white">
 					Contact
 				</h1>
 				<form

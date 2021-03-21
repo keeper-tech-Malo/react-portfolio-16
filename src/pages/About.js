@@ -16,6 +16,8 @@ export default class About extends React.Component {
 		return (
             <Fragment>
                 <Navigation/>
+				<div id="about" className="btn-style nav-item nav-lin">
+
                 <div id="my-background" className="background">
 					<div id="stars" />
 					<div id="stars2" />
@@ -145,6 +147,7 @@ export default class About extends React.Component {
 				</div>
 			</div>
             </div>
+				</div>
 			
                 
                 

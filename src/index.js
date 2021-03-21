@@ -16,15 +16,17 @@ import 'popper.js/dist/umd/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 //icon
 import '@fortawesome/fontawesome-free/css/all.min.css'
-
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 // your style
 import './sass/app.scss'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    
     <App />
+    
+		<Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

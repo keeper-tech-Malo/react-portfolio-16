@@ -9,7 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark  ">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark premier  ">
             <div>
                 <Navbar.Brand href="#home">
                     <img className="logo" src={Logo} alt="" />
