@@ -25,8 +25,8 @@ export default class Background extends React.Component {
 						className={"work-button " + this.props.bounceIn}
 						data-wow-offset="0"
 						onClick={() => {
-							let node = document.getElementById(
-								this.props.aboutRef.current.props.id
+						let node = document.getElementById(
+								"home"
 							);
 							window.scrollTo({
 								top: node.offsetTop,

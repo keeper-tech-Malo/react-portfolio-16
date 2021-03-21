@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Navigation from '../component/Navigation'
 
+
 import Profile from '../img/44243149_2139095206100797_2424276564897169408_n.jpg'
 import Background from '../component/Background'
 import layers from "../img/layers.png";
@@ -15,12 +16,15 @@ export default class About extends React.Component {
 		return (
             <Fragment>
                 <Navigation/>
-                <Background/>
-                
+                <div id="my-background" className="background">
+					<div id="stars" />
+					<div id="stars2" />
+					<div id="stars3" />
+            		
 			<div
 				id="about-container"
 				className="content-containers container text-center mt-5">
-				<h1 id="about" className={this.props.bounceLeft}>
+				<h1 id="about" className={this.props.bounceLeft}  className="text-danger">
 					About
 				</h1>
 				<div className="row mt-5">
@@ -29,28 +33,28 @@ export default class About extends React.Component {
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
 						<img src={layers} alt=""/>
-						<h4>Responsive</h4>
+						<h4 className="text-danger">Responsive</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInLeft
 						}>
 						<img src={pen} alt=""/>
-						<h4>Design</h4>
+						<h4 className="text-danger">Design</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
 						<img src={cogwheel} alt=""/>
-						<h4>Performance</h4>
+						<h4 className="text-danger">Performance</h4>
 					</div>
 					<div
 						className={
 							"col-6 col-sm-6 col-md-3 " + this.props.fadeInRight
 						}>
 						<img src={browser} alt=""/>
-						<h4>Agile</h4>
+						<h4 className="text-danger">Agile</h4>
 					</div>
 				</div>
 
@@ -67,7 +71,7 @@ export default class About extends React.Component {
 							}}
 						/>
 						<p className={"mytext pt-3 " + this.props.fadeIn}>
-							j'adore transforme les idées en realite. je suis passioner de code et de musique!
+							J'adore transforme les idées en realite. Je suis passioner de code et de musique!
 						</p>
 					</div>
 					<div
@@ -99,27 +103,18 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-90-bar"
 								role="progressbar"
-								style={{ width: 90 + "%" }}
+								style={{ width: 50 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								Javascript
 							</div>
 						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PHP
-							</div>
-						</div>
+						
 						<div className="progress mb-3">
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 60 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								ReactJS
@@ -136,16 +131,7 @@ export default class About extends React.Component {
 								SASS
 							</div>
 						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								VanillaJS
-							</div>
-						</div>
+						
 						<div className="progress mb-3">
 							<div
 								className="progress-bar fill-60-bar"
@@ -159,6 +145,9 @@ export default class About extends React.Component {
 					</div>
 				</div>
 			</div>
+            	</div>
+                
+                
                 
             </Fragment>
 		);
