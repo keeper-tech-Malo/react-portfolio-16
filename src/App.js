@@ -9,6 +9,8 @@ import { BrowserRouter as Browser, Switch, Route,
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About'
+import Navigation from './component/Navigation';
+import Mycarousal from './component/Mycarousal';
 // Import de vos Images
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------- //
@@ -22,6 +24,7 @@ function App() {
         <Route exact path='/' component={Home}/>
         <Route exact path='/contact' component={Contact}/>
         <Route exact path='/about' component={About}/>
+        <Mycarousal/>
         
       </Switch>
     </Browser>
