@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    justify-content: center;
+    li{
+        .nav-active{
+            color: black;
+            
+            
+        }
+    }
+    
+    
+    a{
+        margin:5px 15px;
+        text-decoration: none;
+
+        
+    }
+}

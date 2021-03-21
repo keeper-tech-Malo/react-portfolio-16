@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Import Bootstrap 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// Import Fortawesome
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+// import Scss
+/////react comprend directement qu'il doit allez chercher dans node_modules
+//bootstrap css
+import 'bootstrap/dist/css/bootstrap.min.css'
+//bootstrap js
+import 'bootstrap/dist/js/bootstrap.min.js'
+import 'popper.js/dist/umd/popper.min.js'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+//icon
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
+// your style
+import './sass/app.scss'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +27,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
