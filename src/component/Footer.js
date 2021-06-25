@@ -1,5 +1,4 @@
 import React from "react";
-
 import codepen from "../img/codepen-1.png";
 import github from "../img/github.png";
 import linkedin from "../img/linkedin.png";

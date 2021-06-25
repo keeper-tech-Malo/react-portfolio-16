@@ -210,9 +210,7 @@ export default class Projects extends React.Component {
 								</ul>
 							</div>
 							<div className="modal-bottom">
-								<a href="" target="_blank">
-									<h3>View live demo</h3>
-								</a>
+								
 								<p
 									className="close-icon"
 									style={{

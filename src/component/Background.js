@@ -20,7 +20,7 @@ export default class Background extends React.Component {
 						<br />
 						je suis un Web Developper.
 					</h1>
-					{/* offset can be cahnged in node modules wowjs default file */}
+					
 					<button
 						className={"work-button " + this.props.bounceIn}
 						data-wow-offset="0"
